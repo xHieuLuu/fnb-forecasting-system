@@ -2,7 +2,7 @@
 
 Ngày: 2026-08-13
 
-Trạng thái: Đã thống nhất thiết kế trong phiên brainstorming; chờ duyệt đặc tả bằng văn bản
+Trạng thái: Đã được người dùng duyệt; hiệu chỉnh nguồn weather backtest theo tài liệu API chính thức
 
 Phạm vi: Đồ án cá nhân ngành Khoa học Máy tính, thời gian 12–16 tuần
 
@@ -118,7 +118,7 @@ Nhu cầu được sinh bằng phân phối đếm quá phân tán, kết hợp:
 - Giá bán, chương trình khuyến mãi đã lên lịch và thời điểm ra mắt món.
 - Stockout, cú sốc ngẫu nhiên và thay đổi nhẹ về thị hiếu để tránh chuỗi quá lý tưởng.
 
-Thời tiết quan sát được dùng để sinh nhu cầu. Khi backtest, feature thời tiết tương lai phải lấy từ bản dự báo thời tiết đã được phát hành tại thời điểm tương ứng, thông qua [Open-Meteo Historical Forecast API](https://open-meteo.com/en/docs/historical-forecast-api). Dashboard vận hành dùng [Open-Meteo Forecast API](https://open-meteo.com/en/docs). Nếu bản dự báo lịch sử không khả dụng tại một cutoff, fold đó dùng biến thể mô hình không có thời tiết; không thay thế âm thầm bằng thời tiết quan sát thực tế.
+Thời tiết quan sát từ [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api) được dùng để sinh nhu cầu. Khi backtest, feature thời tiết tương lai phải lấy từ [Open-Meteo Previous Runs API](https://open-meteo.com/en/docs/previous-runs-api): biến hậu tố `_previous_day1` đến `_previous_day7` biểu diễn giá trị từng ngày đích được dự báo trước đúng 1–7 ngày. Dashboard vận hành dùng [Open-Meteo Forecast API](https://open-meteo.com/en/docs). Nếu previous-run tương ứng không khả dụng tại một cutoff, fold đó dùng biến thể mô hình không có thời tiết; không thay thế âm thầm bằng thời tiết quan sát thực tế.
 
 Ngày lễ được tạo bằng thư viện [python-holidays](https://github.com/vacanza/holidays) với mã quốc gia `VN`, cộng thêm các feature khoảng cách đến/trôi qua Tết được tính chỉ từ lịch đã biết.
 
