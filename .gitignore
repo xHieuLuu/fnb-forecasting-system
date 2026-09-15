@@ -48,6 +48,7 @@ docx_render_check/
 .superpowers/
 .worktrees/
 .agents/
+docs/
 temp_inspect_docx.py
 
 # ==========================================
