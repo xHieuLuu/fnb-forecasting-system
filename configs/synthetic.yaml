@@ -1,0 +1,88 @@
+dispersion: 8.0
+promo_beta: 0.18
+items:
+  - {item_id: coffee_black, item_name: "cà phê đen đá", category: coffee, base_price: 29000, base_log_demand: 3.25, weekday_effect: &weekday {0: 0.04, 1: 0.06, 2: 0.04, 3: 0.02, 4: 0.10, 5: 0.18, 6: 0.14}, month_effect: &month {1: 0.08, 2: -0.22, 3: 0.02, 4: 0.03, 5: 0.05, 6: 0.08, 7: 0.10, 8: 0.06, 9: 0.04, 10: 0.03, 11: 0.02, 12: 0.12}, temperature_beta: 0.025, rain_beta: -0.05, holiday_beta: -0.30, launch_date: 2024-01-02}
+  - {item_id: coffee_milk, item_name: "cà phê sữa đá", category: coffee, base_price: 32000, base_log_demand: 3.42, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.02, rain_beta: -0.04, holiday_beta: -0.25, launch_date: 2024-01-02}
+  - {item_id: bac_xiu, item_name: "bạc xỉu", category: coffee, base_price: 35000, base_log_demand: 2.95, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.02, rain_beta: -0.03, holiday_beta: -0.20, launch_date: 2024-01-02}
+  - {item_id: espresso, item_name: espresso, category: coffee, base_price: 35000, base_log_demand: 2.70, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.01, rain_beta: -0.03, holiday_beta: -0.25, launch_date: 2024-01-02}
+  - {item_id: latte, item_name: latte, category: coffee, base_price: 45000, base_log_demand: 2.90, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.02, rain_beta: -0.03, holiday_beta: -0.22, launch_date: 2024-01-02}
+  - {item_id: cappuccino, item_name: cappuccino, category: coffee, base_price: 45000, base_log_demand: 2.75, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.01, rain_beta: -0.03, holiday_beta: -0.22, launch_date: 2024-01-02}
+  - {item_id: peach_orange_lemongrass_tea, item_name: "trà đào cam sả", category: tea, base_price: 45000, base_log_demand: 3.05, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.05, rain_beta: -0.06, holiday_beta: -0.18, launch_date: 2024-01-02}
+  - {item_id: lychee_tea, item_name: "trà vải", category: tea, base_price: 42000, base_log_demand: 2.85, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.05, rain_beta: -0.05, holiday_beta: -0.18, launch_date: 2024-01-02}
+  - {item_id: lemon_tea, item_name: "trà chanh", category: tea, base_price: 30000, base_log_demand: 3.00, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.06, rain_beta: -0.04, holiday_beta: -0.15, launch_date: 2024-01-02}
+  - {item_id: traditional_milk_tea, item_name: "trà sữa truyền thống", category: milk_tea, base_price: 40000, base_log_demand: 3.10, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.03, rain_beta: -0.02, holiday_beta: -0.16, launch_date: 2024-01-02}
+  - {item_id: brown_sugar_boba_milk_tea, item_name: "trà sữa trân châu đường đen", category: milk_tea, base_price: 50000, base_log_demand: 3.00, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.03, rain_beta: -0.02, holiday_beta: -0.16, launch_date: 2024-06-01}
+  - {item_id: matcha_milk_tea, item_name: "trà sữa matcha", category: milk_tea, base_price: 50000, base_log_demand: 2.80, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.03, rain_beta: -0.02, holiday_beta: -0.16, launch_date: 2024-06-01}
+  - {item_id: chocolate_frappe, item_name: "chocolate đá xay", category: blended, base_price: 55000, base_log_demand: 2.65, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.06, rain_beta: -0.04, holiday_beta: -0.18, launch_date: 2024-01-02}
+  - {item_id: matcha_latte, item_name: "matcha latte", category: blended, base_price: 52000, base_log_demand: 2.60, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.04, rain_beta: -0.03, holiday_beta: -0.18, launch_date: 2024-01-02}
+  - {item_id: orange_juice, item_name: "nước cam", category: juice, base_price: 40000, base_log_demand: 2.90, weekday_effect: *weekday, month_effect: *month, temperature_beta: 0.07, rain_beta: -0.05, holiday_beta: -0.15, launch_date: 2025-03-01}
+ingredients:
+  - {ingredient_id: coffee_beans, name: "hạt cà phê", base_unit: kg, waste_rate: 0.02, pack_size: 1.0, lead_time_days: 3, review_period_days: 7, shelf_life_days: 180, perishable: false}
+  - {ingredient_id: condensed_milk, name: "sữa đặc", base_unit: liter, waste_rate: 0.01, pack_size: 1.0, lead_time_days: 2, review_period_days: 7, shelf_life_days: 120, perishable: false}
+  - {ingredient_id: fresh_milk, name: "sữa tươi", base_unit: liter, waste_rate: 0.04, pack_size: 1.0, lead_time_days: 1, review_period_days: 3, shelf_life_days: 10, perishable: true}
+  - {ingredient_id: black_tea, name: "trà đen", base_unit: kg, waste_rate: 0.02, pack_size: 0.5, lead_time_days: 3, review_period_days: 7, shelf_life_days: 180, perishable: false}
+  - {ingredient_id: green_tea, name: "trà xanh", base_unit: kg, waste_rate: 0.02, pack_size: 0.5, lead_time_days: 3, review_period_days: 7, shelf_life_days: 180, perishable: false}
+  - {ingredient_id: matcha_powder, name: "bột matcha", base_unit: kg, waste_rate: 0.03, pack_size: 0.25, lead_time_days: 5, review_period_days: 7, shelf_life_days: 120, perishable: false}
+  - {ingredient_id: sugar_syrup, name: "syrup đường", base_unit: liter, waste_rate: 0.01, pack_size: 1.0, lead_time_days: 2, review_period_days: 7, shelf_life_days: 90, perishable: false}
+  - {ingredient_id: canned_peach, name: "đào ngâm", base_unit: kg, waste_rate: 0.03, pack_size: 1.0, lead_time_days: 3, review_period_days: 7, shelf_life_days: 60, perishable: true}
+  - {ingredient_id: canned_lychee, name: "vải ngâm", base_unit: kg, waste_rate: 0.03, pack_size: 1.0, lead_time_days: 3, review_period_days: 7, shelf_life_days: 60, perishable: true}
+  - {ingredient_id: fresh_orange, name: "cam tươi", base_unit: kg, waste_rate: 0.08, pack_size: 2.0, lead_time_days: 1, review_period_days: 3, shelf_life_days: 7, perishable: true}
+  - {ingredient_id: fresh_lemon, name: "chanh tươi", base_unit: kg, waste_rate: 0.08, pack_size: 1.0, lead_time_days: 1, review_period_days: 3, shelf_life_days: 7, perishable: true}
+  - {ingredient_id: tapioca_pearls, name: "trân châu", base_unit: kg, waste_rate: 0.05, pack_size: 1.0, lead_time_days: 2, review_period_days: 3, shelf_life_days: 14, perishable: true}
+  - {ingredient_id: chocolate_powder, name: "bột chocolate", base_unit: kg, waste_rate: 0.02, pack_size: 0.5, lead_time_days: 4, review_period_days: 7, shelf_life_days: 180, perishable: false}
+  - {ingredient_id: cream, name: "kem sữa", base_unit: liter, waste_rate: 0.05, pack_size: 1.0, lead_time_days: 1, review_period_days: 3, shelf_life_days: 10, perishable: true}
+  - {ingredient_id: cup_lid_straw_set, name: "bộ ly–nắp–ống hút", base_unit: set, waste_rate: 0.01, pack_size: 50, lead_time_days: 3, review_period_days: 7, shelf_life_days: 365, perishable: false}
+recipes:
+  - {item_id: coffee_black, ingredient_id: coffee_beans, amount: 0.022, unit: kg}
+  - {item_id: coffee_milk, ingredient_id: coffee_beans, amount: 0.020, unit: kg}
+  - {item_id: coffee_milk, ingredient_id: condensed_milk, amount: 0.030, unit: liter}
+  - {item_id: bac_xiu, ingredient_id: coffee_beans, amount: 0.012, unit: kg}
+  - {item_id: bac_xiu, ingredient_id: condensed_milk, amount: 0.035, unit: liter}
+  - {item_id: bac_xiu, ingredient_id: fresh_milk, amount: 0.080, unit: liter}
+  - {item_id: espresso, ingredient_id: coffee_beans, amount: 0.018, unit: kg}
+  - {item_id: latte, ingredient_id: coffee_beans, amount: 0.018, unit: kg}
+  - {item_id: latte, ingredient_id: fresh_milk, amount: 0.160, unit: liter}
+  - {item_id: cappuccino, ingredient_id: coffee_beans, amount: 0.018, unit: kg}
+  - {item_id: cappuccino, ingredient_id: fresh_milk, amount: 0.120, unit: liter}
+  - {item_id: cappuccino, ingredient_id: cream, amount: 0.030, unit: liter}
+  - {item_id: peach_orange_lemongrass_tea, ingredient_id: black_tea, amount: 0.008, unit: kg}
+  - {item_id: peach_orange_lemongrass_tea, ingredient_id: canned_peach, amount: 0.060, unit: kg}
+  - {item_id: peach_orange_lemongrass_tea, ingredient_id: fresh_orange, amount: 0.040, unit: kg}
+  - {item_id: peach_orange_lemongrass_tea, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: lychee_tea, ingredient_id: black_tea, amount: 0.008, unit: kg}
+  - {item_id: lychee_tea, ingredient_id: canned_lychee, amount: 0.060, unit: kg}
+  - {item_id: lychee_tea, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: lemon_tea, ingredient_id: black_tea, amount: 0.008, unit: kg}
+  - {item_id: lemon_tea, ingredient_id: fresh_lemon, amount: 0.030, unit: kg}
+  - {item_id: lemon_tea, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: traditional_milk_tea, ingredient_id: black_tea, amount: 0.008, unit: kg}
+  - {item_id: traditional_milk_tea, ingredient_id: fresh_milk, amount: 0.120, unit: liter}
+  - {item_id: traditional_milk_tea, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: brown_sugar_boba_milk_tea, ingredient_id: black_tea, amount: 0.008, unit: kg}
+  - {item_id: brown_sugar_boba_milk_tea, ingredient_id: tapioca_pearls, amount: 0.050, unit: kg}
+  - {item_id: brown_sugar_boba_milk_tea, ingredient_id: sugar_syrup, amount: 0.025, unit: liter}
+  - {item_id: matcha_milk_tea, ingredient_id: green_tea, amount: 0.006, unit: kg}
+  - {item_id: matcha_milk_tea, ingredient_id: matcha_powder, amount: 0.004, unit: kg}
+  - {item_id: matcha_milk_tea, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: chocolate_frappe, ingredient_id: chocolate_powder, amount: 0.030, unit: kg}
+  - {item_id: chocolate_frappe, ingredient_id: cream, amount: 0.050, unit: liter}
+  - {item_id: chocolate_frappe, ingredient_id: sugar_syrup, amount: 0.020, unit: liter}
+  - {item_id: matcha_latte, ingredient_id: matcha_powder, amount: 0.005, unit: kg}
+  - {item_id: matcha_latte, ingredient_id: fresh_milk, amount: 0.150, unit: liter}
+  - {item_id: matcha_latte, ingredient_id: sugar_syrup, amount: 0.015, unit: liter}
+  - {item_id: orange_juice, ingredient_id: fresh_orange, amount: 0.200, unit: kg}
+  - {item_id: coffee_black, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: coffee_milk, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: bac_xiu, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: espresso, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: latte, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: cappuccino, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: peach_orange_lemongrass_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: lychee_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: lemon_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: traditional_milk_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: brown_sugar_boba_milk_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: matcha_milk_tea, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: chocolate_frappe, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: matcha_latte, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}
+  - {item_id: orange_juice, ingredient_id: cup_lid_straw_set, amount: 1, unit: set}

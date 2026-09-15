@@ -1,2 +1,64 @@
+# ==========================================
+# Python Virtual Environments
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# ==========================================
+# Byte-compiled / Python Cache Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.cache/
+
+# ==========================================
+# Testing & Linting Caches
+# ==========================================
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pytest_temp/
+.pytest_tmp/
+temp_pytest/
+.coverage
+htmlcov/
+
+# ==========================================
+# Data & Generated Artifacts
+# ==========================================
+data/raw/
+data/processed/
+data/**/checksums.json
+artifacts/
+scratch/
+docx_render_check/
+*.tmp.docx
+*.before-report-sync.docx
+
+# ==========================================
+# Agent & Tool Metadata (Internal)
+# ==========================================
 .superpowers/
 .worktrees/
+.agents/
+temp_inspect_docx.py
+
+# ==========================================
+# IDE & Operating System Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

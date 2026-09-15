@@ -1,0 +1,65 @@
+candidates:
+  - &base_w28_h16_a1
+    name: tft_w28_h16_a1
+    input_window: 28
+    hidden_size: 16
+    attention_head_size: 1
+    hidden_continuous_size: 8
+    dropout: 0.1
+    batch_size: 64
+    learning_rate: 0.001
+    max_epochs: 100
+    early_stopping_patience: 10
+    gradient_clip_val: 1.0
+    limit_train_batches: 1.0
+    seed: 20260813
+  - <<: *base_w28_h16_a1
+    name: tft_w28_h16_a4
+    attention_head_size: 4
+  - <<: *base_w28_h16_a1
+    name: tft_w28_h32_a1
+    hidden_size: 32
+    hidden_continuous_size: 16
+  - <<: *base_w28_h16_a1
+    name: tft_w28_h32_a4
+    hidden_size: 32
+    hidden_continuous_size: 16
+    attention_head_size: 4
+  - <<: *base_w28_h16_a1
+    name: tft_w28_h64_a1
+    hidden_size: 64
+    hidden_continuous_size: 16
+  - <<: *base_w28_h16_a1
+    name: tft_w28_h64_a4
+    hidden_size: 64
+    hidden_continuous_size: 16
+    attention_head_size: 4
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h16_a1
+    input_window: 56
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h16_a4
+    input_window: 56
+    attention_head_size: 4
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h32_a1
+    input_window: 56
+    hidden_size: 32
+    hidden_continuous_size: 16
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h32_a4
+    input_window: 56
+    hidden_size: 32
+    hidden_continuous_size: 16
+    attention_head_size: 4
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h64_a1
+    input_window: 56
+    hidden_size: 64
+    hidden_continuous_size: 16
+  - <<: *base_w28_h16_a1
+    name: tft_w56_h64_a4
+    input_window: 56
+    hidden_size: 64
+    hidden_continuous_size: 16
+    attention_head_size: 4

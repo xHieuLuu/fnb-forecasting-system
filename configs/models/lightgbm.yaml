@@ -1,0 +1,59 @@
+candidates:
+  - &base_l15_dneg1_lr003
+    name: lgb_l15_d-1_lr0.03
+    num_leaves: 15
+    max_depth: -1
+    learning_rate: 0.03
+    n_estimators: 800
+    subsample: 0.9
+    subsample_freq: 1
+    colsample_bytree: 0.9
+    seed: 20260813
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l15_d-1_lr0.05
+    learning_rate: 0.05
+    n_estimators: 500
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l15_d8_lr0.03
+    max_depth: 8
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l15_d8_lr0.05
+    max_depth: 8
+    learning_rate: 0.05
+    n_estimators: 500
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l31_d-1_lr0.03
+    num_leaves: 31
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l31_d-1_lr0.05
+    num_leaves: 31
+    learning_rate: 0.05
+    n_estimators: 500
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l31_d8_lr0.03
+    num_leaves: 31
+    max_depth: 8
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l31_d8_lr0.05
+    num_leaves: 31
+    max_depth: 8
+    learning_rate: 0.05
+    n_estimators: 500
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l63_d-1_lr0.03
+    num_leaves: 63
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l63_d-1_lr0.05
+    num_leaves: 63
+    learning_rate: 0.05
+    n_estimators: 500
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l63_d8_lr0.03
+    num_leaves: 63
+    max_depth: 8
+  - <<: *base_l15_dneg1_lr003
+    name: lgb_l63_d8_lr0.05
+    num_leaves: 63
+    max_depth: 8
+    learning_rate: 0.05
+    n_estimators: 500

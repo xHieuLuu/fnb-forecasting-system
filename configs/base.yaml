@@ -1,0 +1,20 @@
+forecast:
+  horizon_days: 7
+  input_windows: [28, 56]
+scenario:
+  start_date: 2024-01-02
+  end_date: 2025-12-31
+  seed: 20260813
+  item_count: 15
+  ingredient_count: 15
+evaluation:
+  validation_folds: 8
+  test_days: 28
+location:
+  latitude: 10.8231
+  longitude: 106.6297
+  timezone: Asia/Ho_Chi_Minh
+paths:
+  data_root: data
+  artifact_root: artifacts
+  cache_root: .cache
